@@ -1,13 +1,12 @@
 function kilometerToMeter(valu){
-    if(valu==0){
-        console.log("false")
-    }else{
-
+    if(valu>=0){
         var kilo = valu* 1000;
         return kilo;
+    }else{
+        console.log("false")
     }
 }
-var result = kilometerToMeter(0);
+var result = kilometerToMeter(6);
 console.log(result);
 
 
@@ -15,11 +14,18 @@ console.log(result);
 
 function budgetCalculator(watchNum,mobNum,lapNum)
 {
-    var allAmount = watchNum * 50+mobNum * 100+lapNum * 500;
-    return allAmount;
+    if(watchNum>0,mobNum>0,lapNum>0)
+    {
+        var allAmount = watchNum * 50+mobNum * 100+lapNum * 500;
+        return allAmount;
+    }
+    else
+    {
+        console.log("ERROR");
+    }
 }
- var result =budgetCalculator(2,2,2);
- console.log(result)
+ var result =budgetCalculator(1,1,1);
+ console.log(result);
 
 
 
@@ -56,6 +62,8 @@ function hotelCost(day){
 var result = hotelCost(21);
 
 console.log(result);
+
+
 
 
 
